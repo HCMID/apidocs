@@ -44,7 +44,7 @@ for REPO in $(cat repos.txt) ; do
 done;
 
 export STAMPED=`date`
-printf "## HC-MID code libraries: version numbers and API documentation\n\nLast updated: $STAMPED\n\n" > header.md
+printf "## HC-MID code libraries: version numbers and documentation\n\nLast updated: $STAMPED\n\n" > header.md
 $CAT header.md links.md > docs/index.md
 $RM header.md
 
