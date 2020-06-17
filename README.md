@@ -1,6 +1,6 @@
 # apidocs
 
-Automatically generated API docs for HC MID code libraries.
+Automatically generated API docs for HC MID code libraries. See <https://hcmid.github.io/apidocs/>.
 
 ## Requirements
 
