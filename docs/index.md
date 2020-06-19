@@ -1,6 +1,6 @@
 ## HC-MID code libraries: version numbers and documentation
 
-Last updated: Fri Jun 19 08:17:19 EDT 2020
+Last updated: Fri Jun 19 09:50:33 EDT 2020
 
 
 - `projectvalidator` **13.2.0**. [API docs](projectvalidator/api/edu/holycross/shot/mid/validator/index.html).   [User guide](https://hcmid.github.io/projectvalidator/). [Github](https://github.com/hcmid/projectvalidator).
