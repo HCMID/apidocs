@@ -176,7 +176,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">EditorsRepo</span><span class="params">(<span name="baseDir">baseDir: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="readerMap">readerMap: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Vector">Vector</span>[<span class="extype" name="edu.holycross.shot.mid.markupreader.MidMarkupReader">MidMarkupReader</span>]]</span>)</span><span class="result"> extends <span class="extype" name="wvlet.log.LogSupport">LogSupport</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">EditorsRepo</span><span class="params">(<span name="baseDir">baseDir: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="readerMap">readerMap: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Vector">Vector</span>[<span class="extype" name="edu.holycross.shot.mid.markupreader.MidMarkupReader">MidMarkupReader</span>]]</span>, <span name="orthoMap">orthoMap: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="edu.holycross.shot.mid.orthography.MidOrthography">MidOrthography</span>] = <span class="symbol">Map.empty[String, MidOrthography]</span></span>)</span><span class="result"> extends <span class="extype" name="wvlet.log.LogSupport">LogSupport</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
 
@@ -185,7 +185,7 @@
 local file system laid out according to conventions first
 defined in 2018.  The class includes a function to create
 a CiteLibrary from the contents of these files.
-</p></div><dl class="paramcmts block"><dt class="param">baseDir</dt><dd class="cmt"><p>Root directory of repository.</p></dd><dt class="param">readerMap</dt><dd class="cmt"><p>Mapping of String names to classes of <span class="extype" name="MidMarkupReader">MidMarkupReader</span>, necessary in building CITE library.</p></dd></dl><div class="toggleContainer block">
+</p></div><dl class="paramcmts block"><dt class="param">baseDir</dt><dd class="cmt"><p>Root directory of repository.</p></dd><dt class="param">readerMap</dt><dd class="cmt"><p>Mapping of String names to classes of MidMarkupReader, necessary in building CITE library.</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -236,9 +236,9 @@ a CiteLibrary from the contents of these files.
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="edu.holycross.shot.mid.validator.EditorsRepo#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(baseDir:String,readerMap:Map[String,Vector[edu.holycross.shot.mid.markupreader.MidMarkupReader]]):edu.holycross.shot.mid.validator.EditorsRepo"></a><a id="&lt;init&gt;:EditorsRepo"></a>
+      <a id="&lt;init&gt;(baseDir:String,readerMap:Map[String,Vector[edu.holycross.shot.mid.markupreader.MidMarkupReader]],orthoMap:Map[String,edu.holycross.shot.mid.orthography.MidOrthography]):edu.holycross.shot.mid.validator.EditorsRepo"></a><a id="&lt;init&gt;:EditorsRepo"></a>
       <span class="permalink">
-      <a href="../../../../../edu/holycross/shot/mid/validator/EditorsRepo.html#&lt;init&gt;(baseDir:String,readerMap:Map[String,Vector[edu.holycross.shot.mid.markupreader.MidMarkupReader]]):edu.holycross.shot.mid.validator.EditorsRepo" title="Permalink">
+      <a href="../../../../../edu/holycross/shot/mid/validator/EditorsRepo.html#&lt;init&gt;(baseDir:String,readerMap:Map[String,Vector[edu.holycross.shot.mid.markupreader.MidMarkupReader]],orthoMap:Map[String,edu.holycross.shot.mid.orthography.MidOrthography]):edu.holycross.shot.mid.validator.EditorsRepo" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -247,10 +247,10 @@ a CiteLibrary from the contents of these files.
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">EditorsRepo</span><span class="params">(<span name="baseDir">baseDir: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="readerMap">readerMap: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Vector">Vector</span>[<span class="extype" name="edu.holycross.shot.mid.markupreader.MidMarkupReader">MidMarkupReader</span>]]</span>)</span>
+        <span class="name">EditorsRepo</span><span class="params">(<span name="baseDir">baseDir: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="readerMap">readerMap: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Vector">Vector</span>[<span class="extype" name="edu.holycross.shot.mid.markupreader.MidMarkupReader">MidMarkupReader</span>]]</span>, <span name="orthoMap">orthoMap: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="edu.holycross.shot.mid.orthography.MidOrthography">MidOrthography</span>] = <span class="symbol">Map.empty[String, MidOrthography]</span></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">baseDir</dt><dd class="cmt"><p>Root directory of repository.</p></dd><dt class="param">readerMap</dt><dd class="cmt"><p>Mapping of String names to classes of <span class="extype" name="MidMarkupReader">MidMarkupReader</span>, necessary in building CITE library.</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">baseDir</dt><dd class="cmt"><p>Root directory of repository.</p></dd><dt class="param">readerMap</dt><dd class="cmt"><p>Mapping of String names to classes of MidMarkupReader, necessary in building CITE library.</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -479,25 +479,6 @@ a CiteLibrary from the contents of these files.
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>LoggingMethods</dd></dl></div>
-    </li><li name="edu.holycross.shot.mid.validator.EditorsRepo#diplomaticReader" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="diplomaticReader(urn:edu.holycross.shot.cite.CtsUrn):edu.holycross.shot.mid.markupreader.MidMarkupReader"></a><a id="diplomaticReader(CtsUrn):MidMarkupReader"></a>
-      <span class="permalink">
-      <a href="../../../../../edu/holycross/shot/mid/validator/EditorsRepo.html#diplomaticReader(urn:edu.holycross.shot.cite.CtsUrn):edu.holycross.shot.mid.markupreader.MidMarkupReader" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">diplomaticReader</span><span class="params">(<span name="urn">urn: <span class="extype" name="edu.holycross.shot.cite.CtsUrn">CtsUrn</span></span>)</span><span class="result">: <span class="extype" name="edu.holycross.shot.mid.markupreader.MidMarkupReader">MidMarkupReader</span></span>
-      </span>
-      
-      <p class="shortcomment cmt">Use convention that first reader listed for each CTS URN
-in markup reader configuration must produce a diplomatic edition.</p><div class="fullcomment"><div class="comment cmt"><p>Use convention that first reader listed for each CTS URN
-in markup reader configuration must produce a diplomatic edition.
-</p></div><dl class="paramcmts block"><dt class="param">urn</dt><dd class="cmt"><p>CTS Urn identifying text(s) to find reader for.</p></dd></dl></div>
     </li><li name="edu.holycross.shot.mid.validator.EditorsRepo#dirs" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="dirs:scala.collection.immutable.Vector[better.files.File]"></a><a id="dirs:Vector[File]"></a>
       <span class="permalink">
@@ -562,6 +543,38 @@ in markup reader configuration must produce a diplomatic edition.
       </span>
       
       <p class="shortcomment cmt">Directory for DSE records (in CEX format).</p>
+    </li><li name="edu.holycross.shot.mid.validator.EditorsRepo#editions" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editions:edu.holycross.shot.ohco2.Corpus"></a><a id="editions:Corpus"></a>
+      <span class="permalink">
+      <a href="../../../../../edu/holycross/shot/mid/validator/EditorsRepo.html#editions:edu.holycross.shot.ohco2.Corpus" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editions</span><span class="result">: <span class="extype" name="edu.holycross.shot.ohco2.Corpus">Corpus</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Create a single Corpus containing all configured editions.</p>
+    </li><li name="edu.holycross.shot.mid.validator.EditorsRepo#editionsCatalog" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editionsCatalog:edu.holycross.shot.ohco2.Catalog"></a><a id="editionsCatalog:Catalog"></a>
+      <span class="permalink">
+      <a href="../../../../../edu/holycross/shot/mid/validator/EditorsRepo.html#editionsCatalog:edu.holycross.shot.ohco2.Catalog" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editionsCatalog</span><span class="result">: <span class="extype" name="edu.holycross.shot.ohco2.Catalog">Catalog</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Compose text Catalog for all editions.</p>
     </li><li name="edu.holycross.shot.mid.validator.EditorsRepo#editionsDir" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="editionsDir:better.files.File"></a><a id="editionsDir:File"></a>
       <span class="permalink">
@@ -578,6 +591,22 @@ in markup reader configuration must produce a diplomatic edition.
       </span>
       
       <p class="shortcomment cmt">Directory with cataloged editions of texts.</p>
+    </li><li name="edu.holycross.shot.mid.validator.EditorsRepo#editionsRepository" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editionsRepository:edu.holycross.shot.ohco2.TextRepository"></a><a id="editionsRepository:TextRepository"></a>
+      <span class="permalink">
+      <a href="../../../../../edu/holycross/shot/mid/validator/EditorsRepo.html#editionsRepository:edu.holycross.shot.ohco2.TextRepository" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editionsRepository</span><span class="result">: <span class="extype" name="edu.holycross.shot.ohco2.TextRepository">TextRepository</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Create a TextRepository for all configured editions.</p>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -849,6 +878,38 @@ in markup reader configuration must produce a diplomatic edition.
       </span>
       
       <p class="shortcomment cmt">Mapping of CtsUrns to MID orthography system.</p>
+    </li><li name="edu.holycross.shot.mid.validator.EditorsRepo#orthoMap" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="orthoMap:Map[String,edu.holycross.shot.mid.orthography.MidOrthography]"></a><a id="orthoMap:Map[String,MidOrthography]"></a>
+      <span class="permalink">
+      <a href="../../../../../edu/holycross/shot/mid/validator/EditorsRepo.html#orthoMap:Map[String,edu.holycross.shot.mid.orthography.MidOrthography]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">orthoMap</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="edu.holycross.shot.mid.orthography.MidOrthography">MidOrthography</span>]</span>
+      </span>
+      
+      
+    </li><li name="edu.holycross.shot.mid.validator.EditorsRepo#orthographies" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="orthographies:Vector[edu.holycross.shot.mid.orthography.OrthoPairing]"></a><a id="orthographies:Vector[OrthoPairing]"></a>
+      <span class="permalink">
+      <a href="../../../../../edu/holycross/shot/mid/validator/EditorsRepo.html#orthographies:Vector[edu.holycross.shot.mid.orthography.OrthoPairing]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">orthographies</span><span class="result">: <span class="extype" name="scala.Vector">Vector</span>[<span class="extype" name="edu.holycross.shot.mid.orthography.OrthoPairing">OrthoPairing</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Build <span class="extype" name="OrthoPairing">OrthoPairing</span>s from configuration in this repository.</p>
     </li><li name="edu.holycross.shot.mid.validator.EditorsRepo#rawTexts" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="rawTexts:edu.holycross.shot.ohco2.TextRepository"></a><a id="rawTexts:TextRepository"></a>
       <span class="permalink">
@@ -858,7 +919,7 @@ in markup reader configuration must produce a diplomatic edition.
     </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">lazy val</span>
       </span>
       <span class="symbol">
         <span class="name">rawTexts</span><span class="result">: <span class="extype" name="edu.holycross.shot.ohco2.TextRepository">TextRepository</span></span>
@@ -912,7 +973,7 @@ in markup reader configuration must produce a diplomatic edition.
         <span class="name">readers</span><span class="result">: <span class="extype" name="scala.Vector">Vector</span>[<span class="extype" name="edu.holycross.shot.mid.markupreader.ReadersPairing">ReadersPairing</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Build <span class="extype" name="ReadersPairing">ReadersPairing</span>s from configuration in this repository.</p>
+      <p class="shortcomment cmt">Build ReadersPairings from configuration in this repository.</p>
     </li><li name="edu.holycross.shot.mid.validator.EditorsRepo#readersConfig" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="readersConfig:better.files.File"></a><a id="readersConfig:File"></a>
       <span class="permalink">
@@ -929,6 +990,22 @@ in markup reader configuration must produce a diplomatic edition.
       </span>
       
       <p class="shortcomment cmt">Mapping of CtsUrns to MID markup readers.</p>
+    </li><li name="edu.holycross.shot.mid.validator.EditorsRepo#subcorpora" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="subcorpora:Vector[edu.holycross.shot.ohco2.Corpus]"></a><a id="subcorpora:Vector[Corpus]"></a>
+      <span class="permalink">
+      <a href="../../../../../edu/holycross/shot/mid/validator/EditorsRepo.html#subcorpora:Vector[edu.holycross.shot.ohco2.Corpus]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">subcorpora</span><span class="result">: <span class="extype" name="scala.Vector">Vector</span>[<span class="extype" name="edu.holycross.shot.ohco2.Corpus">Corpus</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Extract subcorpora for texts defined in readers pairings.</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
@@ -961,6 +1038,54 @@ in markup reader configuration must produce a diplomatic edition.
       </span>
       
       <p class="shortcomment cmt">Directory with cataloged editions of texts.</p>
+    </li><li name="edu.holycross.shot.mid.validator.EditorsRepo#tokencorpora" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tokencorpora:Vector[edu.holycross.shot.ohco2.Corpus]"></a><a id="tokencorpora:Vector[Corpus]"></a>
+      <span class="permalink">
+      <a href="../../../../../edu/holycross/shot/mid/validator/EditorsRepo.html#tokencorpora:Vector[edu.holycross.shot.ohco2.Corpus]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tokencorpora</span><span class="result">: <span class="extype" name="scala.Vector">Vector</span>[<span class="extype" name="edu.holycross.shot.ohco2.Corpus">Corpus</span>]</span>
+      </span>
+      
+      
+    </li><li name="edu.holycross.shot.mid.validator.EditorsRepo#tokenized" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tokenized:edu.holycross.shot.ohco2.Corpus"></a><a id="tokenized:Corpus"></a>
+      <span class="permalink">
+      <a href="../../../../../edu/holycross/shot/mid/validator/EditorsRepo.html#tokenized:edu.holycross.shot.ohco2.Corpus" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tokenized</span><span class="result">: <span class="extype" name="edu.holycross.shot.ohco2.Corpus">Corpus</span></span>
+      </span>
+      
+      
+    </li><li name="edu.holycross.shot.mid.validator.EditorsRepo#tokenizedCatalog" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tokenizedCatalog:edu.holycross.shot.ohco2.Catalog"></a><a id="tokenizedCatalog:Catalog"></a>
+      <span class="permalink">
+      <a href="../../../../../edu/holycross/shot/mid/validator/EditorsRepo.html#tokenizedCatalog:edu.holycross.shot.ohco2.Catalog" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tokenizedCatalog</span><span class="result">: <span class="extype" name="edu.holycross.shot.ohco2.Catalog">Catalog</span></span>
+      </span>
+      
+      
     </li><li name="wvlet.log.LoggingMethods#trace" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="trace(message:Any,cause:Throwable):Unit"></a><a id="trace(Any,Throwable):Unit"></a>
       <span class="permalink">
